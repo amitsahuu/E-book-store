@@ -1,0 +1,1 @@
+Welcome to E-book-store, your new favorite online bookstore. We offer a curated collection of books across all genres, from bestsellers to hidden gems. Find your next great read and have it delivered right to your door.
