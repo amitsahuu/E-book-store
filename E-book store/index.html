@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bookstore | Buy books online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h3>FLAT 10% off (Maximum Discount Rs.50) Use code BWSPECIAL10</h3>
+    </header>
+    <div class="logo">
+        <img src="ebookstorelogo.png" alt="Online Bookstore Logo">
+        <input type="text" id="searchbar" placeholder="Search by title,Author,Publisher or ISBN" style="font-size: larger;">
+        <button>Search</button>
+        <h2> <img src="usericon.png" style="height: 30px;" alt="User Account Icon">Account</h2>
+        <h2> <img src="addtocart.png" style="height: 30px;" alt="Shopping Cart Icon">Cart</h2>
+    </div>
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li><a href="#">Book</a></li>
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#">Box Sets</a></li>
+                <li><a href="#">Best sellers</a></li>
+                <li><a href="#">Fiction books</a></li>
+                <li><a href="#">Award Winners</a></li>
+                <li><a href="#">Featured Authors</a></li>
+                <li><a href="#">Todays Deals</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="websitetag">
+        <img src="indiaslargest.jpg" style="width: 100%;" alt="India's Largest Online Bookstore">
+    </div>
+    <div class="w3-content w3-display-container">
+        <img class="mySlides" src="picture1.jpg" style="width:100%" alt="Book promotion 1">
+        <img class="mySlides" src="picture2.jpg" style="width:100%" alt="Book promotion 2">
+        <img class="mySlides" src="picture3.jpg" style="width:100%" alt="Book promotion 3">
+        <img class="mySlides" src="picture4.jpg" style="width:100%" alt="Book promotion 4">
+        <img class="mySlides" src="picture5.jpg" style="width:100%" alt="Book promotion 5">
+        
+        <button class="slideshowbotton" onclick="plusDivs(-1)" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%);">&#10094;</button>
+        <button class="slideshowbotton" onclick="plusDivs(1)" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%);">&#10095;</button>
+    </div>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            x[slideIndex-1].style.display = "block";  
+        }
+    </script>
+        
+    <div class="childrenssection">
+        <h1>LITTLE ADVENTURES FOR CHILDREN</h1>
+        <section class="childrensbooks">
+            <img src="childrensbook1.png" alt="Children's book cover: Is That a KudKud Kumbha">
+            <h2>Is That a KudKud Kumbha</h2>
+            <h3>₹250</h3>
+            <button class="addtocart">Add to cart</button>
+        </section>
+        <section class="childrensbooks">
+            <img src="childrensbook2.png" alt="Children's book cover: A Bite Before Christmas">
+            <h2>A Bite Before Christmas</h2>
+            <h3>₹250</h3>
+            <button class="addtocart">Add to cart</button>
+        </section>
+        <section class="childrensbooks">
+            <img src="chldrensbook3.jpg" alt="Children's book cover: Kachhuon ka Intjaar">
+            <h2>Kachhuon ka Intjaar</h2>
+            <h3>₹250</h3>
+            <button class="addtocart">Add to cart</button>
+        </section>
+        <section class="childrensbooks">
+            <img src="childrensbook4.jpg" alt="Children's book cover: The Homework">
+            <h2>The Homework</h2>
+            <h3>₹250</h3>
+            <button class="addtocart">Add to cart</button>
+        </section>
+        <section class="childrensbooks">
+            <img src="childrensbook5.jpg" alt="Children's book cover: Star Struck">
+            <h2>Star Struck</h2>
+            <h3>₹250</h3>
+            <button class="addtocart">Add to cart</button>
+        </section>
+    </div>
+    <div class="mainbooks">
+        <section class="books">
+            <h1>Fiction Books</h1>
+            <img src="fictionbooks.jpg" alt="Promotional image for fiction books">
+        </section>
+        <section class="books">
+            <h1>Manga Mania Best Sellers</h1>
+            <img src="mangamaniaWeb.jpg" alt="Promotional image for manga best sellers">
+        </section>
+    </div>
+    <div>
+        <img src="kiskstart your medical dream.jpg" style="width: 90%; margin-left: 80px;" alt="Advertisement for medical study books">
+        <img src="Screenshot 2024-12-02 104010.png" style="width: 90%; margin-left: 80px;" alt="Another promotional image">
+    </div>
+    <footer>
+        <h3>Company</h3>
+        <ul class="footerlist">
+            <li><a href="#" style="color: red;">About Us</a></li>
+            <li><a href="#" style="color: red">Career</a></li>
+            <li><a href="#" style="color: red">Blog</a></li>
+            <li><a href="#" style="color: red">Contact Us</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
